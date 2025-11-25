@@ -1,0 +1,302 @@
+/* -------------------------------- */
+/* PALETA DE COLORES */
+/* -------------------------------- */
+:root {
+    --rosa-suave: #f8dce2;
+    --rosa-claro: #fbeef2;
+    --rosa-oscuro: #e8a6b8;
+    --verde-tenue: #cfdad1;
+    --blanco: #ffffff;
+    --texto-oscuro: #333333;
+}
+
+/* GENERALES */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: var(--rosa-claro);
+    color: var(--texto-oscuro);
+}
+
+/* NAV */
+nav {
+    background: var(--rosa-oscuro);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--rosa-claro);
+}
+
+/* BANNER */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--rosa-suave);
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(90%);
+}
+
+.banner-texto {
+    position: absolute;
+    text-align: center;
+    color: var(--blanco);
+    text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.banner-texto h1 {
+    font-size: 48px;
+}
+
+.banner-texto p {
+    font-size: 20px;
+}
+
+/* QUIÉNES SOMOS */
+.quienes-container {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    align-items: center;
+}
+
+.quienes-img img {
+    width: 380px;
+    border-radius: 15px;
+}
+
+.quienes-texto {
+    max-width: 600px;
+}
+
+.quienes-texto h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* CATÁLOGO */
+.catalogo-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.productos-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.producto h3 {
+    margin-top: 10px;
+}
+
+/* CONTACTO */
+.contacto-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.form-contacto {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: var(--rosa-oscuro);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ----------------------------- */
+/*     QUIÉNES SOMOS ESTILO     */
+/* ----------------------------- */
+.quienes-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.quienes-img img {
+    width: 480px;          /* Imagen más grande */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.quienes-texto {
+    width: 50%;
+}
+
+.quienes-texto h1 {
+    font-size: 42px;       /* Título más grande */
+    margin-bottom: 20px;
+    color: var(--rosa-oscuro);
+}
+
+.quienes-texto p {
+    font-size: 22px;       /* Texto más grande */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* TABLA DE PRODUCTOS */
+.tabla-productos {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+.tabla-productos td {
+    width: 33%;
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.tabla-productos td:hover {
+    background: #f8dce2; /* Rosa suave al pasar mouse */
+}
+
+.tabla-productos img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------- */
+/*    FORMULARIO CONTACTANOS    */
+/* ----------------------------- */
+
+.contacto-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: var(--blanco);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contacto-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: var(--rosa-oscuro);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto select {
+    padding: 10px;
+    border: 2px solid var(--rosa-oscuro);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.botones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-enviar {
+    background: var(--rosa-oscuro);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background: var(--rosa-suave);
+    color: var(--texto-oscuro);
+}
+
+.btn-borrar {
+    background: var(--verde-tenue);
+    color: var(--texto-oscuro);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-borrar:hover {
+    background: #b7c4b9;
+}
+
+
+

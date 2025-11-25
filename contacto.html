@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Luna Beauty Shop</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">Luna Beauty Shop</div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes.html">Quiénes Somos</a></li>
+            <li><a href="catalogo.html">Productos</a></li>
+            <li><a class="active" href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <!-- FORMULARIO -->
+    <section class="contacto-container">
+        <h1>Contáctanos</h1>
+
+        <form class="formulario-contacto">
+
+            <label>Nombre del Cliente:</label>
+            <input type="text" required>
+
+            <label>Celular:</label>
+            <input type="tel" required>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" required>
+
+            <label>Tipo de Producto o Servicio:</label>
+            <input type="text" required>
+
+            <label>Cantidad:</label>
+            <input type="number" min="1" required>
+
+            <label>Forma de Pago:</label>
+            <select required>
+                <option value="">Seleccione una opción</option>
+                <option>Tarjeta</option>
+                <option>Depósito</option>
+                <option>Pago en Oxxo</option>
+            </select>
+
+            <div class="botones">
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <button type="reset" class="btn-borrar">Borrar</button>
+            </div>
+
+        </form>
+
+    </section>
+    <footer>
+        <p>Desarrollado por: Berenice y Estrella</p>
+    </footer>
+
+</body>
+</html>
+
+
